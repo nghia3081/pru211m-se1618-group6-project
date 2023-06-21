@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
         private Rigidbody2D rb;
         private float rotationSpeed = 180f;
-       [SerializeField] float moveSpeed = 20f;
+        public float moveSpeed = 20f;
        
     // Start is called before the first frame update
     void Start()
@@ -33,6 +33,6 @@ public class Movement : MonoBehaviour
         Vector3 velocity = new Vector3(0,Input.GetAxisRaw("Vertical")*moveSpeed * Time.deltaTime,0);
         pos = pos + rotate * velocity;
         transform.position = pos;
-       
+     
     }
 }
