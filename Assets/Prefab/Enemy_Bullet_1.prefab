@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5814562951602361525}
   - component: {fileID: 5814562951602361530}
   - component: {fileID: 5814562951602361531}
-  - component: {fileID: 1735623701782172890}
+  - component: {fileID: 2309683472685409754}
   m_Layer: 7
   m_Name: Enemy_Bullet_1
   m_TagString: Untagged
@@ -106,12 +106,6 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -156,8 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelfDestructTimer: 5
---- !u!68 &1735623701782172890
-EdgeCollider2D:
+--- !u!60 &2309683472685409754
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -166,50 +160,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.3333335, y: 5.3333335}
+    newSize: {x: 5.3333335, y: 5.3333335}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: 0.024992704, y: -2.4585233}
-  - {x: -0.12294848, y: -1.710897}
-  - {x: -0.11866647, y: -1.07707}
-  - {x: -0.26648337, y: -0.6301256}
-  - {x: -0.28212705, y: 0.13679379}
-  - {x: -0.40444547, y: 0.34937245}
-  - {x: -0.4707967, y: 0.97782815}
-  - {x: -0.5903017, y: 1.7292125}
-  - {x: -0.33505473, y: 2.150432}
-  - {x: 0.09325433, y: 2.3313584}
-  - {x: 0.46671447, y: 2.1102233}
-  - {x: 0.7860663, y: 1.6953326}
-  - {x: 0.62502456, y: 0.9007581}
-  - {x: 0.5749183, y: 0.30758983}
-  - {x: 0.48351526, y: 0.029930487}
-  - {x: 0.32537252, y: -0.97710276}
-  - {x: 0.19898045, y: -2.245914}
-  - {x: 0.08097845, y: -2.5009117}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+    m_Paths:
+    - - {x: -0.37283498, y: 1.639699}
+      - {x: -0.03372839, y: -0.41233668}
+      - {x: 0.10597087, y: -1.7658765}
+      - {x: 0.24567005, y: -0.11561835}
+      - {x: 0.53950167, y: 1.6425859}
+      - {x: 0.16666667, y: 2.0578094}
+      - {x: -0.021194166, y: 2.0366154}

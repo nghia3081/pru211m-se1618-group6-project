@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5613021705534393653}
   - component: {fileID: 9085573686702858781}
-  - component: {fileID: 932054986759050470}
+  - component: {fileID: 5964563310289360291}
   m_Layer: 0
   m_Name: Alien 1
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9085573686702858781
 SpriteRenderer:
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &932054986759050470
-EdgeCollider2D:
+--- !u!60 &5964563310289360291
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,76 +95,46 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 8.75}
+    newSize: {x: 5, y: 8.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: -0.09676564, y: -4.3738885}
-  - {x: -0.42090586, y: -4.342666}
-  - {x: -0.51797956, y: -3.5916681}
-  - {x: -0.9350145, y: -3.5843096}
-  - {x: -1.0199122, y: -3.8021474}
-  - {x: -1.9053751, y: -3.7712998}
-  - {x: -2.1075363, y: -2.8754323}
-  - {x: -2.5443447, y: -2.769192}
-  - {x: -2.4808476, y: -2.2202456}
-  - {x: -2.1570854, y: -1.6313386}
-  - {x: -2.5456479, y: -1.4991393}
-  - {x: -2.571498, y: -0.58608687}
-  - {x: -2.3531008, y: 0.4743612}
-  - {x: -2.2243805, y: 1.0374477}
-  - {x: -1.9990563, y: 2.2222304}
-  - {x: -2.0004702, y: 2.7239954}
-  - {x: -1.8149917, y: 3.527807}
-  - {x: -0.9245584, y: 4.3469515}
-  - {x: -0.5458704, y: 4.393112}
-  - {x: -0.50320196, y: 3.1098423}
-  - {x: -0.0041377395, y: 3.4125931}
-  - {x: 0.39835405, y: 3.2311652}
-  - {x: 0.38064456, y: 4.302053}
-  - {x: 0.94588876, y: 4.4481077}
-  - {x: 1.8367112, y: 3.5691354}
-  - {x: 1.8942032, y: 2.8386314}
-  - {x: 2.0032465, y: 2.0543919}
-  - {x: 2.1655498, y: 1.1588283}
-  - {x: 2.2892845, y: 0.3970284}
-  - {x: 2.3780656, y: -0.4892646}
-  - {x: 2.5895712, y: -0.49324095}
-  - {x: 2.5102007, y: -1.5602859}
-  - {x: 2.1294265, y: -1.6497004}
-  - {x: 2.2391453, y: -1.9995694}
-  - {x: 2.5087664, y: -2.220501}
-  - {x: 2.5036676, y: -2.640024}
-  - {x: 2.1648183, y: -2.8069136}
-  - {x: 1.9455378, y: -2.9932697}
-  - {x: 2.0164828, y: -3.6158085}
-  - {x: 1.8220259, y: -3.7198107}
-  - {x: 1.2531213, y: -3.712797}
-  - {x: 0.2949393, y: -3.6333082}
-  - {x: 0.36612582, y: -4.3491898}
-  - {x: 0.04870081, y: -4.4219513}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+    m_Paths:
+    - - {x: 1.7501824, y: 3.4808393}
+      - {x: 1.0385035, y: 4.2020073}
+      - {x: 0.6633212, y: 4.2596717}
+      - {x: 0.125, y: 3.625}
+      - {x: -0.375, y: 4.25}
+      - {x: -0.6441606, y: 4.2020073}
+      - {x: -0.9711679, y: 4.2308393}
+      - {x: -1.740511, y: 3.3366785}
+      - {x: -2.1251824, y: 0.9038321}
+      - {x: -2.5, y: -2.47135}
+      - {x: -1.8957796, y: -2.8649564}
+      - {x: -1.7308395, y: -3.6828465}
+      - {x: -0.4297223, y: -3.588364}
+      - {x: -0.2790145, y: -4.2885036}
+      - {x: 0.23525083, y: -4.2865386}
+      - {x: 0.47759327, y: -3.5515234}
+      - {x: 1.2883213, y: -3.711861}
+      - {x: 1.7211679, y: -3.6443431}
+      - {x: 2.471168, y: -2.4041967}
+      - {x: 2.1540146, y: 0.75967145}
+    - - {x: -0.25, y: 2.25}
+      - {x: 0, y: 2.5}
+      - {x: 0.25, y: 2.25}
+      - {x: 0.375, y: 0.375}
+      - {x: 0.125, y: 0.625}
+      - {x: -0.125, y: 0.625}
+      - {x: -0.375, y: 0.375}
+      - {x: -0.25, y: 0.375}

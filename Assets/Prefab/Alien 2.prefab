@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313663649758635090}
   - component: {fileID: 6771203696936316872}
-  - component: {fileID: -1071962696119060475}
+  - component: {fileID: 4089063329678615364}
   m_Layer: 0
   m_Name: Alien 2
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &-1071962696119060475
-EdgeCollider2D:
+--- !u!60 &4089063329678615364
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,76 +95,41 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.5, y: 8.5}
+    newSize: {x: 10.5, y: 8.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: 0.06321061, y: -4.212617}
-  - {x: -0.56751645, y: -4.1027045}
-  - {x: -1.0435113, y: -3.7383664}
-  - {x: -1.3033824, y: -4.1490264}
-  - {x: -2.8318627, y: -4.134446}
-  - {x: -3.209846, y: -3.863066}
-  - {x: -3.1594822, y: -2.6939802}
-  - {x: -4.1214943, y: -1.9899999}
-  - {x: -4.3371687, y: -1.4519742}
-  - {x: -4.425154, y: -0.72973216}
-  - {x: -4.8520513, y: -0.2891406}
-  - {x: -4.877676, y: 1.3410778}
-  - {x: -5.1812186, y: 1.4426634}
-  - {x: -5.0824795, y: 2.4194992}
-  - {x: -4.1236997, y: 2.493431}
-  - {x: -3.9880059, y: 2.0447512}
-  - {x: -3.5287938, y: 1.3766015}
-  - {x: -1.6897168, y: 1.4337449}
-  - {x: -1.1407213, y: 2.5291255}
-  - {x: -0.74619436, y: 3.0920079}
-  - {x: -0.6066896, y: 3.9520943}
-  - {x: -0.022770733, y: 4.212618}
-  - {x: 0.5880584, y: 3.9946597}
-  - {x: 0.7891736, y: 3.0691357}
-  - {x: 1.1975586, y: 2.5515568}
-  - {x: 1.763427, y: 1.4311922}
-  - {x: 3.4457738, y: 1.3682181}
-  - {x: 4.0212255, y: 1.9906738}
-  - {x: 4.1127825, y: 2.3440318}
-  - {x: 5.050354, y: 2.4012477}
-  - {x: 5.1542306, y: 1.4175279}
-  - {x: 4.901643, y: 1.3833721}
-  - {x: 4.874896, y: -0.37147182}
-  - {x: 4.4136915, y: -0.70992875}
-  - {x: 4.389933, y: -1.2914088}
-  - {x: 4.149548, y: -1.3267205}
-  - {x: 4.2358885, y: -1.8847822}
-  - {x: 3.2747087, y: -2.690191}
-  - {x: 3.135065, y: -3.9096816}
-  - {x: 2.874055, y: -4.1854506}
-  - {x: 1.5357698, y: -4.2287636}
-  - {x: 0.99959004, y: -3.7979736}
-  - {x: 0.60434496, y: -4.077823}
-  - {x: 0.08859539, y: -4.1746655}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+    m_Paths:
+    - - {x: 4.642776, y: 2.0042303}
+      - {x: 2.5198915, y: 0.9861704}
+      - {x: 1.3592802, y: 1.4745883}
+      - {x: 0.08491456, y: 4.514148}
+      - {x: -1.5170194, y: 1.3755628}
+      - {x: -2.4174664, y: 1.1000248}
+      - {x: -4.870485, y: 2.1048243}
+      - {x: -4.8504515, y: -0.21260506}
+      - {x: -4.111455, y: -0.9554181}
+      - {x: -3.9753094, y: -1.9463881}
+      - {x: -3.091081, y: -2.635224}
+      - {x: -2.9084363, y: -3.870485}
+      - {x: -1.562674, y: -3.962297}
+      - {x: -1.2179782, y: -3.5467}
+      - {x: -0.7108827, y: -3.6209004}
+      - {x: -0.44487172, y: -4.011848}
+      - {x: 0.35338092, y: -3.9970992}
+      - {x: 1.1491854, y: -3.5705817}
+      - {x: 1.6039639, y: -3.986959}
+      - {x: 2.8325334, y: -3.9843397}
+      - {x: 3.1509886, y: -2.484478}
+      - {x: 4.1807275, y: -1.5445819}
+      - {x: 4.7566304, y: 0.100593686}
