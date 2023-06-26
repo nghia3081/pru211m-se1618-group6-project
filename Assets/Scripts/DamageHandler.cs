@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DamageHandler : MonoBehaviour
-{   DamageHandler Bubble;
-
+{   
     public int health = 2;
     int correctLayer;
+    float invulTimer = 0;
     public float invulPeriod = 0;
-    float invulTime = 0;
+
     // Start is called before the first frame update
     void Start()
 
@@ -18,8 +18,8 @@ public class DamageHandler : MonoBehaviour
     }
     void OnTriggerEnter2D(){
         health--;
-        if(invulTime >0){
-        invulTime = invulPeriod;
+        if(invulPeriod >0){
+        invulTimer = invulPeriod;
         gameObject.layer = 8;
         }
        
@@ -28,11 +28,11 @@ public class DamageHandler : MonoBehaviour
     void Update()
     {   
         //invul
-        if(invulTime >0){
-        invulTime -= Time.deltaTime;   
+        if(invulTimer >0){
+        invulTimer -= Time.deltaTime;   
 
         //not invul    
-        if(invulTime <=0){
+        if(invulTimer <=0){
         gameObject.layer = correctLayer;
         }
         }
@@ -42,5 +42,6 @@ public class DamageHandler : MonoBehaviour
     }
     void Die(){
         Destroy(gameObject);
+        
     }
 }

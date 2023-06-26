@@ -10,8 +10,12 @@ public class EnemyShooting : MonoBehaviour
     int bulletLayer;
     SpriteRenderer Sprite;
     public Vector3 bulletOffset = new Vector3(0,0.5f,0);
+
+    public AudioSource shootSFX; // The AudioSource component for playing the sound effect.
+
     void Start(){
         bulletLayer = gameObject.layer;
+        shootSFX = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -22,6 +26,8 @@ public class EnemyShooting : MonoBehaviour
             Vector3 offsetBullet = transform.rotation * new Vector3(0,10f,0);
             GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position + offsetBullet, transform.rotation);
             bulletGO.layer = bulletLayer;
+            shootSFX.Play();
+
         }
     }
 }
