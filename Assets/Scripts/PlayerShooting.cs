@@ -8,6 +8,7 @@ public class PlayerShooting : MonoBehaviour
     public float fireDelay = 0.5f;
     float cooldownTimer = 0;
     int bulletLayer;
+    public AudioSource shootingSFX;
     // Update is called once per frame
     void Start(){
         bulletLayer = gameObject.layer;
@@ -21,6 +22,7 @@ public class PlayerShooting : MonoBehaviour
             Vector3 offsetBullet = transform.rotation * new Vector3(0,10f,0);
             GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position + offsetBullet, transform.rotation);
             bulletGO.layer = bulletLayer;
+            shootingSFX.Play();
         }
     }
 }
