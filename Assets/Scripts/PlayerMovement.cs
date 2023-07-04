@@ -9,10 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 20f;
     public float speedMultiplier = 1.5f;
     public GameObject smokeTrailPrefab;
-
+    public static long score;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        score = 0;
     }
 
     void Update()

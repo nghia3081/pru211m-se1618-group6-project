@@ -16,7 +16,7 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         cooldownTimer -= Time.deltaTime;
-        if( Input.GetButtonDown("Fire1") && cooldownTimer <=0){
+        if( Input.GetButton("Fire1") && cooldownTimer <=0){
           
             cooldownTimer = fireDelay;
             Vector3 offsetBullet = transform.rotation * new Vector3(0,10f,0);

@@ -7,6 +7,7 @@ public class TracingPlayer : MonoBehaviour
     // Start is called before the first frame update
     Transform player;
     public float rotationSpeed = 90f;
+    public long score = 5;
     // Update is called once per frame
     void Update()
     {
