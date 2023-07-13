@@ -123,6 +123,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &28891382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28891384}
+  - component: {fileID: 28891383}
+  m_Layer: 0
+  m_Name: StarSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &28891383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28891382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bf82232c2404674be00c9c1fa741b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StarGO: {fileID: 1870055714363055123, guid: e4353b2c3f9f546e1865fa06a5d5ee6c, type: 3}
+  maxStars: 75
+--- !u!4 &28891384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28891382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.891434, y: 10.814694, z: -0.7013312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286995274
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +476,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782449851}
   m_CullTransparentMesh: 1
+--- !u!1 &1186348075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186348077}
+  - component: {fileID: 1186348076}
+  m_Layer: 0
+  m_Name: BackgroundObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1186348076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186348075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4955ec051ad79490b8b818d08f22b59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyGO:
+  - {fileID: 1234771309520972488, guid: 45191a29fa2d94bc89dc2e1000cc35db, type: 3}
+  - {fileID: 5908709303177684388, guid: a6a713a36f9904f67a14075704ab0329, type: 3}
+  - {fileID: 866131056488073146, guid: c2a4448f5239b4af8bca8322442d109e, type: 3}
+  - {fileID: 5904030016679206905, guid: 40c7f12218dcb45f999ac3f651ffbfcc, type: 3}
+  - {fileID: 675485242674356799, guid: abb91cbe1aabb47dd87938cdf63186c0, type: 3}
+  - {fileID: 6043141442233301254, guid: 8fd7ffd4dbf74404bb23c1af3ced42c3, type: 3}
+  - {fileID: 9008488772945255637, guid: 2d6bdb81dbf644bff8be1d35d554dae2, type: 3}
+--- !u!4 &1186348077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186348075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.064896, y: -13.495018, z: -0.1619789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1190370159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5842100540483752569, guid: c8aa0aadff86bf4448068c2431e02448, type: 3}
@@ -613,7 +711,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.14608696, g: 0.09554112, b: 0.1792453, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -681,6 +779,14 @@ PrefabInstance:
       propertyPath: smokeTrailPrefab
       value: 
       objectReference: {fileID: 100002, guid: e277fc8ff03cc194cab4e6e40a188132, type: 3}
+    - target: {fileID: -2276688822849967304, guid: c8aa0aadff86bf4448068c2431e02448, type: 3}
+      propertyPath: health
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: -2276688822849967304, guid: c8aa0aadff86bf4448068c2431e02448, type: 3}
+      propertyPath: invulPeriod
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5842100540483752569, guid: c8aa0aadff86bf4448068c2431e02448, type: 3}
       propertyPath: m_Name
       value: PlayerShip
