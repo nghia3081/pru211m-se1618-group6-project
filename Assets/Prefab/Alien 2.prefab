@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -8224434981170715871}
   m_Layer: 7
   m_Name: Alien 2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5fb9976b3c11044aa5560f06fb2809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 90
+  rotationSpeed: 100
 --- !u!60 &2709948128941775109
 PolygonCollider2D:
   m_ObjectHideFlags: 0
