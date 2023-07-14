@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -9,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 20f;
     public float speedMultiplier = 1.5f;
     public GameObject smokeTrailPrefab;
-    public static long score;
+    public static long score = 0;
+    public TextMeshProUGUI TextMeshProUGUI;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,5 +41,6 @@ public class PlayerMovement : MonoBehaviour
 
         pos = pos + rotate * velocity;
         transform.position = pos;
+        TextMeshProUGUI.text = $"Your score: {score}";
     }
 }

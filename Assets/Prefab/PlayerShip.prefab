@@ -203,6 +203,7 @@ MonoBehaviour:
   moveSpeed: 30
   speedMultiplier: 1.5
   smokeTrailPrefab: {fileID: 0}
+  TextMeshProUGUI: {fileID: 0}
 --- !u!114 &8524112928964890240
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,20 +9,25 @@ public class EnemySpawner : MonoBehaviour
     public float spawnRate = 1f; // The rate at which enemies will spawn.
     private float nextSpawnTime = 0f; // The time that the next enemy should spawn.
     private Camera mainCamera; // A reference to the main camera.
-
+    public float delayTimeAtBegining;
     void Start()
     {
         mainCamera = Camera.main;
+
     }
 
     void Update()
     {
+        if (Time.time < delayTimeAtBegining)
+        {
+            return;
+        }
         if (Time.time >= nextSpawnTime)
         {
             nextSpawnTime = Time.time + spawnRate;
 
             // Choose a random enemy prefab from the array.
-            int randomIndex = Random.Range(0, enemyPrefabs.Length);
+            int randomIndex = UnityEngine.Random.Range(0, enemyPrefabs.Length);
             GameObject enemyPrefab = enemyPrefabs[randomIndex];
 
             // Get the bounds of the camera view.

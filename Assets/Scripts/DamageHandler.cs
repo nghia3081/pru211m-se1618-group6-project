@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DamageHandler : MonoBehaviour
 {
@@ -54,8 +55,7 @@ public class DamageHandler : MonoBehaviour
             }
             if ("Player".Equals(tag))
             {
-                Debug.LogWarning($"Your score is {PlayerMovement.score}");
-                PlayerMovement.score = 0;
+                SceneManager.LoadScene("Menu",LoadSceneMode.Single);
             }
         }
     }
